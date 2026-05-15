@@ -10,14 +10,13 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f7f5f2;
+      font-family: 'Helvetica Neue', Arial, sans-serif;      background-color: #f2eee8;
       color: #222;
       line-height: 1.8;
     }
 
     header {
-      background-color: #1f1f1f;
+background: linear-gradient(to right, #4b4036, #756457);
       color: white;
       text-align: center;
       padding: 80px 20px;
@@ -26,6 +25,8 @@
     header h1 {
       font-size: 3.2rem;
       margin-bottom: 10px;
+letter-spacing: 1px;
+text-transform: uppercase;
     }
 
     header p {
@@ -33,56 +34,94 @@
       opacity: 0.9;
     }
 
+header::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #c9b8a5;
+  margin: 30px auto 0;
+}
+
     section {
-      max-width: 950px;
+      max-width: 760px;
       margin: auto;
-      padding: 50px 25px;
+      padding: 80px 25px;
     }
 
 h2 {
-  font-size: 2.3rem;
-  margin-bottom: 25px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 12px;
-  font-weight: bold;
+font-size: 2.5rem;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #cfcfcf;
+  padding-bottom: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
    
 p {
   margin-bottom: 24px;
-  font-size: 1.08rem;
+  font-size: 1.02rem;
   line-height: 1.9;
+  max-width: 720px;
 }
 
 img {
   width: 88%;
   display: block;
   margin: 40px auto;
-  border-radius: 12px;
+  border-radius: 18px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
 }
+
+img:hover {
+  transform: scale(1.01);
+}
+
+.hero {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 60px;
+  border-radius: 0;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #d6cec4;
+  margin: 80px auto;
+  width: 60%;
+}
+
     .caption {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: #666;
       margin-top: 10px;
       margin-bottom: 30px;
-      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
 .quote {
-  background-color: #ece8e3;
-  padding: 30px;
-  border-left: 5px solid #444;
-  margin: 60px 0;
-  font-size: 1.25rem;
+  background-color: #e7ddd4;
+  padding: 40px;
+  border-left: 6px solid #5e4b3c;
+  margin: 80px 0;
+  font-size: 1.35rem;
   font-style: italic;
+  line-height: 1.7;
+  color: #3d342d;
 }
 
     a {
-      color: #0d63c9;
+      color: #3f5f45;
       text-decoration: none;
     }
 
     a:hover {
+      color: #2d4732;
       text-decoration: underline;
     }
 
@@ -107,12 +146,10 @@ img {
 <header>
 
   <h1>The True Cost of Fast Fashion</h1>
+   <p> Why Cheap Clothing Is Not Actually Cheap </p>
 
-  <p>
-    Why Cheap Clothing Is Not Actually Cheap
-  </p>
-
-</header>
+ </header>
+<img src="fashion-landfill.jpg" class="hero">
 
 <section>
 
@@ -147,6 +184,7 @@ The research project investigates fast fashion's actual expenses through its imp
   </div>
 
 </section>
+<hr class="divider">
 
 <section>
 
@@ -186,6 +224,7 @@ The fast fashion industry has grown through its understanding of this system bec
   </p>
 
 </section>
+<hr class="divider">
 
 <section>
 
@@ -223,14 +262,8 @@ The production graph displays a trendline which confirms this existing pattern. 
 The environmental significance of this production becomes more apparent when production is analyzed alongside landfill waste.
 </p>
 
-
-<img src="production-trend.png" alt="Production Trend Graph">
-
-<p class="caption">
-Clothing production has remained consistently high over time despite yearly fluctuations.
-</p>
-
 </section>
+<hr class="divider">
 
 <section>
 
@@ -276,6 +309,7 @@ Fast fashion waste creates environmental damage that extends beyond landfill sit
 </p>
 
 </section>
+<hr class="divider">
 
 <section>
 
@@ -333,6 +367,7 @@ The emissions graph evaluated in this project demonstrates that the fashion indu
   </p>
 
 </section>
+<hr class="divider">
 
 <section>
 
@@ -415,7 +450,7 @@ People usually spend additional money on fast fashion products because they need
   </p>
 
 </section>
-
+<hr class="divider">
 <section>
 
   <h2>Works Cited</h2>
